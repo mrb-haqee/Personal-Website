@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Final Project Basic HTML using Tailwind</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="font-Poppins text-white">
+    <div id="conteiner" class="conteiner min-w-full flex-col">
+        <!--start navbar -->
+        <header class=" bg-slate-800 flex justify-between p-2 a">
+            <div id="brand" class="text-sm">
+                <a href="#" class="text-sm md:text-xl mx-3">Portofolio</a>
+            </div>
+            <nav class="mr-3">
+                <ul id='nav-link' class="flex text-sm px-2 space-x-2 md:text-lg ">
+                    <li><a class="active:text-teal-400 hover:text-teal-400" href="#profile">Home</a></li>
+                    <li><a class="active:text-teal-400 hover:text-teal-400" href="#about">About</a></li>
+                    <li><a class="active:text-teal-400 hover:text-teal-400" id="btn" class="btn"
+                            href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- end navbar -->
+        <main class="container min-w-full">
+
+            <!-- start Profile -->
+            <section id="profile"
+                class="container h-screen max-w-full bg-slate-600 flex flex-col items-center justify-center  md:flex-row-reverse">
+                <figure class=" max-w-xs mx-auto flex justify-center items-center md:mr-14 md:w-full">
+                    <img src="src/profil.png" alt="foto-profil"
+                        class="w-48 md:w-72 rounded-full bg-gradient-to-tr from-slate-900 to-sky-200 ">
+                </figure>
+                <div class="max-w-xs mx-auto md:max-w-2xl md:w-screen md:ml-20">
+                    <h3 class="text-base md:text-2xl">Hello, It's <span class="text-teal-400">Me!</span></h3>
+                    <h1 class="text-2xl md:text-6xl ">Muhammad Rafli Baihaqi</h1>
+                    <h4 class="text-base md:text-2xl">I'am a <span class="text-teal-400">Student</span></h4>
+                    <p class="text-sm text-justify md:text-base">I am a student in the mathematics program at Udayana
+                        University.</p>
+                    <div id="social-media" class="text-3xl flex justify-start my-2 space-x-2 md:space-x-3 ">
+                        <a href="mailto:mrb.haqee@gmail.com"><i class='bx bxl-gmail hover:text-teal-400'></i></a>
+                        <a href="https://www.instagram.com/mrb.haqee/" target="_blank "><i
+                                class='bx bxl-instagram-alt hover:text-teal-400'></i></a>
+                        <a href="https://www.linkedin.com/in/mrb-haqee/" target="_blank"><i
+                                class='bx bxl-linkedin-square hover:text-teal-400'></i></a>
+                        <a href="https://github.com/mrb-haqee" target="_blank"><i
+                                class='bx bxl-github hover:text-teal-400'></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end Profile -->
+
+            <!-- start About me -->
+            <section class="bg-slate-700 h-max md:h-screen">
+                <h1 id="about" class="text-center py-3 text-2xl md:text-4xl">About <span
+                        class="text-teal-400">Me!</span></h1>
+                <div class="container flex flex-col md:flex-col md:mx-auto  md:mt-10">
+                    <article class="class-kampus space-y-3 flex flex-col md:flex-row md:justify-center">
+                        <figure class="max-w-xs mx-auto flex justify-center items-center p-0">
+                            <img src="src/kampus.jpg" alt="foto-kampus" class="w-60 md:w-screen">
+                        </figure>
+                        <div class="description-class p-3 pt-1 md:my-auto md:p-5">
+                            <p class="text-sm text-justify align-middle md:text-xl">I studied at udayana university.
+                                udayana
+                                university is a
+                                higher
+                                education institution or
+                                university in bali that produces superior, independent, and cultured human resources.
+                                there
+                                are many choices of study programs, and I chose the mathematics program.</p>
+                        </div>
+                    </article>
+                    <article class="class-kampus mt-2 space-y-3 flex flex-col md:flex-row md:justify-center md:mt-10">
+                        <figure class="max-w-xs mx-auto flex justify-center items-center">
+                            <img src="src/math.png" alt="foto-math" class="w-60 md:w-screen">
+                        </figure>
+                        <div class="description-math p-3 pt-1 md:p-5">
+                            <p class="text-sm text-justify align-middle md:text-xl ">Courses in the
+                                mathematics program
+                                have 3 competencies,
+                                namely
+                                financial mathematics,
+                                statistical mathematics, computational mathematics. Out of several choices of study
+                                programs, I chose the computational mathematics program.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- end About me  -->
+
+            <!-- start Contact -->
+            <section id="contact" class="bg-slate-600 h-screen flex flex-col  mx-auto my-auto md:pt-10">
+                <h1 class="text-center py-3 text-2xl md:text-4xl">Contact <span class="text-teal-400">Me!</span></h1>
+                <form action="" class="mx-auto">
+                    <div class="container flex flex-col md:flex-row">
+                        <div class="p-2 space-y-2">
+                            <input type="text" placeholder="Full Name"
+                                class="block w-full h-3 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500">
+                            <input type="email" placeholder="Email Address"
+                                class="block w-full h-3 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="p-2 space-y-2">
+                            <input type="number" placeholder="Mobile Number"
+                                class="block w-full h-3 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500">
+                            <input type="text" placeholder="Email Subject"
+                                class="block w-full h-3 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    <div class="p-2 space-y-2 flex flex-col justify-center">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        <input type="submit" value="Send Message"
+                            class="bg-teal-400 p-1.5 rounded-lg hover:bg-teal-600 mx-auto">
+                    </div>
+                </form>
+            </section>
+            <!-- end Contact -->
+
+        </main>
+        <footer id="License" class="bg-slate-800 mx-auto">
+            <p class="text-xs text-center md:text-base">Created by Muhammad Rafli Baihaqi.© 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>
