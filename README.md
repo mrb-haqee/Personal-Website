@@ -12,9 +12,8 @@ Personal Website ini telah saya Hosting dengan Netlfy dan mendapatkan alamat Dom
 ```
 https://mrb-haqee.netlify.app/
 ```
-
+<br>
 <br>
 <hr/>
-<h1>
-<center>THANKS!🎉🎉</center>
-</h1>
+<div style="font-size: 25px;text-align: center;">🎉🎉THANKS!🎉🎉</div>
+<hr/>
